@@ -11,8 +11,15 @@ export const SearchForm = () => {
 
   return (
     <div>
-      <input type="text" onChange={onChange} value={value} />
-      <button onClick={onClick}>search</button>
+      <input
+        data-testid="search-input"
+        type="text"
+        onChange={onChange}
+        value={value}
+      />
+      <button data-testid="search-button" onClick={onClick}>
+        search
+      </button>
     </div>
   );
 };

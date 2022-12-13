@@ -20,8 +20,12 @@ describe("rendering", () => {
 
     // 入力フォーム(input)が表示されているか
     expect(screen.getByRole("textbox")).toBeTruthy();
+    // data-testid ver
+    expect(screen.getByTestId("search-input")).toBeTruthy();
 
     // ボタン(button)が表示されているか
     expect(screen.getByRole("button")).toBeTruthy();
+    // data-testid ver
+    expect(screen.getByTestId("search-button")).toBeTruthy();
   });
 });
