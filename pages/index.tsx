@@ -2,5 +2,10 @@ import { Cards } from "../components/Cards";
 import { userInfos } from "../constants/users";
 
 export default function Home() {
-  return <Cards userInfos={userInfos} />;
+  return (
+    <>
+      <p>Hello, world</p>
+      <Cards userInfos={userInfos} />;
+    </>
+  );
 }
