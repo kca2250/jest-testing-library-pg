@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 
-export const SearchForm = () => {
+type SearchFormProps = {
+  onSubmit: (value: string) => void;
+};
+
+export const SearchForm: React.FC<SearchFormProps> = ({ onSubmit }) => {
   const [value, setValue] = useState<string>("");
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
   };
 
-  const onClick = () => console.log(value);
+  const onClick = () => {
+    if (value) {
+      onSubmit(value);
+    } else {
+      console.log("入力フォームが空です");
+    }
+  };
 
   return (
     <div>
