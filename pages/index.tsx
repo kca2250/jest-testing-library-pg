@@ -1,5 +1,6 @@
-import styles from "../styles/Home.module.css";
+import { Cards } from "../components/Cards";
+import { userInfos } from "../constants/users";
 
 export default function Home() {
-  return <div className={styles.container}>Hello, world</div>;
+  return <Cards userInfos={userInfos} />;
 }
