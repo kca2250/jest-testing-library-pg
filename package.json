@@ -28,5 +28,14 @@
     "babel-jest": "^29.3.1",
     "jest": "^29.3.1",
     "jest-css-modules": "^2.1.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+    }
   }
 }
