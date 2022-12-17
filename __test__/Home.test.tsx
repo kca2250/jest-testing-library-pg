@@ -18,7 +18,7 @@ docs: https://jestjs.io/ja/docs/expect#%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%8
 */
 
 describe("rendering test", () => {
-  it("Hello, worldと表示されている", () => {
+  test("Hello, worldと表示されている", () => {
     render(<Home />);
     expect(screen.getByText("Hello, world")).toBeInTheDocument();
   });

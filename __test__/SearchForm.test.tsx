@@ -15,7 +15,7 @@ import userEvent from "@testing-library/user-event";
 */
 
 describe("rendering", () => {
-  it("should render SearchForm", () => {
+  test("should render SearchForm", () => {
     // propsで受け渡すモック関数をテスト用に作成
     const onSubmit = jest.fn();
 
@@ -33,7 +33,7 @@ describe("rendering", () => {
     expect(screen.getByTestId("search-button")).toBeTruthy();
   });
 
-  it("入力フォームにtestを入力", async () => {
+  test("入力フォームにtestを入力", async () => {
     // propsで受け渡すモック関数をテスト用に作成
     const onSubmit = jest.fn();
 
@@ -53,7 +53,7 @@ describe("rendering", () => {
     expect(inputEl.value).toBe("test");
   });
 
-  it("入力フォームにtestを入力した状態でボタンをクリック", async () => {
+  test("入力フォームにtestを入力した状態でボタンをクリック", async () => {
     const onSubmit = jest.fn();
     render(<SearchForm onSubmit={onSubmit} />);
 
@@ -67,7 +67,7 @@ describe("rendering", () => {
     expect(onSubmit).toBeCalled();
   });
 
-  it("入力フォームが空の状態でボタンクリック", async () => {
+  test("入力フォームが空の状態でボタンクリック", async () => {
     const onSubmit = jest.fn();
     render(<SearchForm onSubmit={onSubmit} />);
 
