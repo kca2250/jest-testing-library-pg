@@ -6,9 +6,9 @@
 
 # Samples
 
-- rendering test #3
-- event test #4
-- props test #5
-- hooks test #6
-- useEffect test #7
-- Api test with msw #9
+- rendering test https://github.com/kca2250/jest-testing-library-pg/pull/3
+- event test https://github.com/kca2250/jest-testing-library-pg/pull/4
+- props test https://github.com/kca2250/jest-testing-library-pg/pull/5
+- hooks test https://github.com/kca2250/jest-testing-library-pg/pull/6
+- useEffect test https://github.com/kca2250/jest-testing-library-pg/pull/7
+- Api test with msw https://github.com/kca2250/jest-testing-library-pg/pull/9
