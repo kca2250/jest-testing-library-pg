@@ -5,12 +5,12 @@ import { Cards } from "../components/Cards";
 import { userInfos } from "../constants/users";
 
 describe("Cards component", () => {
-  it("propsに渡ってきた配列が空だった時", () => {
+  test("propsに渡ってきた配列が空だった時", () => {
     render(<Cards userInfos={[]} />);
     expect(screen.getByText("ユーザー情報はありません。")).toBeInTheDocument();
   });
 
-  it("propsに渡ってきた配列の中身が存在する", () => {
+  test("propsに渡ってきた配列の中身が存在する", () => {
     render(<Cards userInfos={userInfos} />);
 
     const userInfoList = screen
